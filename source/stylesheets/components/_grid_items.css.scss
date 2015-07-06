@@ -1,0 +1,104 @@
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
+
+.grid-items {
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $grid-items-background: rgba($action-color, .5);
+  $grid-item-border-size: 1em;
+  $grid-item-columns: 4;
+  $grid-item-big-columns: 8;
+  $grid-item-text-color: white;
+  $grid-item-height: 14em;
+
+  padding: 1em;
+  background-color: $grid-items-background;
+
+  @include clearfix;
+    
+  .grid-item {
+    border: ($grid-item-border-size / 2) solid transparent;
+    cursor: pointer;
+    float: left;
+    height: $grid-item-height;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-columns);
+    }
+
+    box-shadow: inset 0 0 0 15em transparentize($shadow-color, .8);
+
+    &:focus,
+    &:hover {
+      box-shadow: none;
+      h2 {
+        background: rgba($action-color, .9);
+      }
+    }
+  }
+
+  .grid-item h2 {
+    display: inline-block;
+    color: $grid-item-text-color;
+    font-size: 1.3em;
+    margin-top: 6em;
+    margin-bottom: 0.4em;
+    padding: 0.4em;
+    padding-left: 0.6em;
+    background: rgba($action-color, .5);
+    text-align: center;
+    transition: all 1s ease;
+  }
+
+  .grid-item-big {
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-big-columns);
+    }
+  }
+
+  .grid-item-image {
+    background-clip: content-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease;
+  }
+
+  .grid-item-image#faculty {
+    background-image: url("/images/grid/faculty.jpg");
+    &:focus,
+    &:hover {
+      background-position: bottom;
+    }
+  }
+
+  .grid-item-image#history {
+    background-image: url("/images/grid/history.jpg");
+    background-position: top;
+    &:focus,
+    &:hover {
+      background-position: center;
+    }
+  }
+
+  .grid-item-image#students {
+    background-image: url("/images/grid/students.jpg");
+    &:focus,
+    &:hover {
+      background-position: top;
+    }
+  }
+
+  .grid-item-image#family {
+    background-image: url("/images/grid/family.jpg");
+    background-position: top;
+    &:focus,
+    &:hover {
+      background-position: center;
+    }
+  }
+}
