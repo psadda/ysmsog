@@ -2,11 +2,14 @@
 %html{lang: 'en'}
   %head
     %title Yale Service of Gratitude
+    %script{src: '//code.jquery.com/jquery-2.1.4.min.js'}
     = stylesheet_link_tag 'all', media: 'all'
     = javascript_include_tag 'all'
     %link{rel: 'stylesheet', href: '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'}
     %link{rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:300'}
+    %link{rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Montserrat:400,700'}
   %body
-    = partial 'header'
-    = yield
-    = partial 'footer'
+    #top-level-wrapper
+      = partial 'header'
+      = yield
+      = partial 'footer'

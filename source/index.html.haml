@@ -1,8 +1,79 @@
-.main
-  %p
-    We make a living by what we get,
-    %br
-    but we make a life by
-  %h1 What We Give
-  %a.button{href: '/video'} Watch the video
-= partial 'grid_items'
+/ ///// INTRO SECTION  /////
+%section#intro.intro.parallax
+  .image-bg{'data-stellar-background-ratio' => 0.2}
+  .container
+    .color-overlay
+    %p
+      We make a living
+      %br
+      by what we get,
+      %br
+      but we make a life by
+    %h1 What we give
+    %ul.mini-nav
+      %li
+        %a{href: '/video'}
+          Watch the video &nbsp;
+          %i.fa.fa-play-circle-o
+      %li
+        %a{href: ''}
+          Learn more &nbsp;
+          %i.fa.fa-external-link
+  %a.jump-down{href: '#about'}
+    %i.fa.fa-chevron-down
+%section#about.showcase
+  .container
+    .split
+      .split-left.split-text
+        %h2 A Yale Tradition
+        %p &ldquo;What We Give&rdquo; began as an idea to contribute to an enduring tradition at the Yale School of Medicine&mdash;the Service of Gratitude Ceremony. Now a staple at many health professions schools across the country, the service brings together students, faculty, and the family members of donors.
+      .split-right.split-media
+        #showcase-slider.owl-carousel.owl-theme
+          / slider items
+          .item
+            %img{alt: 'Early 20th century medical students dissecting a cadaver', :src => '/images/history.jpg'}/
+          .item
+            %img{alt: 'A medical professor', src: '/images/faculty.jpg'}/
+%section.spacer.parallax
+  .image-bg{'data-stellar-background-ratio' => 0.5}
+%section#features.features
+  .container
+    .title
+      %h2 Bringing people together
+    .feature-items
+      .feature-item
+        %i.fa.fa-stethoscope
+        %h4 Physicians
+        %p Ride a cutting edge, next generation front-end framework with Bourbon Neat.
+      .feature-item
+        %i.fa.fa-heart
+        %h4 Family
+        %p Styles are organised in partial Sass files, for a modular and efficient framework.
+      .feature-item
+        %i.fa.fa-graduation-cap
+        %h4 Students
+        %p Neat is simple and straight to the point. No bloat, mass features to slow you down.
+      .feature-item
+        %i.fa.fa-book
+        %h4 Historians
+        %p The code base behind Neat is super light and optimised to load faster than fast.
+%section.quotes.parallax
+  .image-bg{'data-stellar-background-ratio' => 0.5}
+  .container
+    .color-overlay
+    .title
+      %h2 A place to reflect
+      %p The Service of Gratitude provides a space to reflect openly on the impact that anatomy and the art of dissection had on students. It also provides an opportunity to celebrate the lives of the donors and thank them for their precious gift. The event commonly includes songs, artwork, poetry, recitations, and reflection.
+    #quote-slider.owl-carousel.owl-theme
+      .item
+        %blockquote
+          We make a living by what we get, but we make a life by what we give.
+          %cite
+            Winston Churchill,
+            %a{:href => "#"} Prime Minister
+      .item
+        %blockquote
+          We make a living by what we get, but we make a life by what we give.
+          %cite
+            Winston Churchill,
+            %a{:href => "#"} Prime Minister

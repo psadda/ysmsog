@@ -1,35 +1,38 @@
-%header.centered-navigation{role: 'banner'}
-  .centered-navigation-wrapper
-    %a.mobile-logo{href: 'javascript:void(0)'}
-      %img{src: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png', alt: 'Logo image'}
-    %a#js-centered-navigation-mobile-menu.centered-navigation-mobile-menu{href: 'javascript:void(0)'}
-      %i
-    %nav{role: 'navigation'}
-      %ul#js-centered-navigation-menu.centered-navigation-menu.show
+%header#navigation.navigation.headroom
+  .navigation-wrapper
+    / mobile menu toggle
+    %a#js-mobile-menu.navigation-menu-button{:href => ""} MENU
+    / navigation menu
+    .nav
+      %ul#navigation-menu
+        %li.nav-link.active
+          %a{:href => "#section-intro"} Home
         %li.nav-link
-          %a{href: 'javascript:void(0)'} About
+          %a{:href => "#section-features"} Features
         %li.nav-link
-          %a{href: 'javascript:void(0)'} History
+          %a{:href => "#section-showcase"} Showcase
+        %li.nav-link
+          %a{:href => "#section-blog"} Blog
+        %li.nav-link
+          %a{:href => "#section-contact"} Contact
         %li.nav-link.more
-          %a{href: 'javascript:void(0)'} Interviews
+          %a{:href => "javascript:void(0)"} More
           %ul.submenu
             %li
-              %a{href: 'javascript:void(0)'} Submenu Item
+              %a{:href => "javascript:void(0)"} Submenu Item
             %li
-              %a{href: 'javascript:void(0)'} Another Item
+              %a{:href => "javascript:void(0)"} Another Item
             %li.more
-              %a{href: 'javascript:void(0)'} Item with submenu
+              %a{:href => "javascript:void(0)"} Item with submenu
               %ul.submenu
                 %li
-                  %a{href: 'javascript:void(0)'} Sub-submenu Item
+                  %a{:href => "javascript:void(0)"} Sub-submenu Item
                 %li
-                  %a{href: 'javascript:void(0)'} Another Item
+                  %a{:href => "javascript:void(0)"} Another Item
             %li.more
-              %a{href: 'javascript:void(0)'} Another submenu
+              %a{:href => "javascript:void(0)"} Another submenu
               %ul.submenu
                 %li
-                  %a{href: 'javascript:void(0)'} Sub-submenu
+                  %a{:href => "javascript:void(0)"} Sub-submenu
                 %li
-                  %a{href: 'javascript:void(0)'} An Item
-        %li.nav-link
-          %a{href: 'javascript:void(0)'} Contact
+                  %a{:href => "javascript:void(0)"} An Item

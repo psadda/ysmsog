@@ -1,0 +1,102 @@
+section.intro {
+  padding: 0;
+  color: $title-text-color;
+  text-transform: uppercase;
+
+  .image-bg {
+    background: $parallax-intro-url;
+    background-size: cover;
+  }
+
+  .container {
+    @include media($large-screen-up) {
+      padding: 5em;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @include media($large-screen-down) {
+      padding: 8em 1em 1em 1em;
+    }
+
+    .color-overlay {
+      @include filter(blur(5em));
+    }
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+
+    @include media($large-screen-up) {
+      font-size: 5em;
+      margin: 0.6em 0;
+    }
+
+    @include media($large-screen-down) {
+      font-size: 2em;
+      margin: 1.25em 0 1.25em 0;
+      line-height: 1.5;
+    }
+  }
+
+  p {
+    font-family: $heading-font-family;
+    letter-spacing: $heading-letter-spacing;
+    text-align: center;
+    font-family: $sans-serif;
+    text-transform: uppercase;
+
+    @include media($large-screen-up) {
+      font-size: 2em;
+      margin: 1em 0 0 0;
+    }
+
+    @include media($large-screen-down) {
+      font-size: 1em;
+      line-height: 1.5;
+      margin: 1.5em 0 0 0;
+    }
+  }
+
+  ul.mini-nav {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      padding: 0 1.5em;
+    }
+
+    a:link, a:visited {
+      color: $title-text-color !important;
+    }
+
+    a:hover, a:active {
+      color: darken($title-text-color, 40%);
+    }
+  }
+
+  a.jump-down {
+    position: absolute;
+    bottom: 4em;
+    left: 20%;
+    right: 20%;
+    margin: 2em auto 0;
+    display: block;
+    width: 4em;
+    text-align: center;
+
+    i {
+      color: white;
+      opacity: 0.5;
+      font-size: 3.5em;  
+      text-align: center;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

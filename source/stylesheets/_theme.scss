@@ -1,0 +1,37 @@
+$highlight:	#999;
+$highlight-2:	#2ecc71;
+
+$sans-serif: sans-serif;
+
+$small-screen: 480px;
+$medium-screen: 600px;
+$large-screen: 860px;
+
+$small-screen-up: new-breakpoint(min-width $small-screen 4);
+$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
+$large-screen-up: new-breakpoint(min-width $large-screen 12);
+
+$large-screen-down: new-breakpoint(max-width $large-screen 12);
+$medium-screen-down: new-breakpoint(max-width $medium-screen 4);
+$small-screen-down: new-breakpoint(max-width $small-screen 4);
+
+$base-link-color: $action-color;
+$base-accent-color:	#2ecc71;
+
+$base-background-color: white;
+
+$title-text-color: white;
+
+$parallax-intro-url:		url('/images/intro.jpg') 0 0 no-repeat;
+$parallax-spacer-url:	url('/images/students.jpg') 0 0 no-repeat;
+$parallax-quote-url:		url('/images/reflection.jpg') 0 0 no-repeat;
+
+@import 'theme/owl-flexslider';
+@import 'theme/owl-theme';
+@import 'theme/globals';
+@import 'theme/header';
+@import 'theme/intro';
+@import 'theme/about';
+@import 'theme/showcase';
+@import 'theme/quote';
+@import 'theme/footer';
