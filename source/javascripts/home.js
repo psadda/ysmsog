@@ -5,10 +5,13 @@ $(function() {
     return check;
   }
   if(!mobileAndTabletCheck()) {
-    if($('#top-level-wrapper').tubular({videoId: 'eqmRgex_GP4'})) {
+    if($('#top-level-wrapper.index').tubular({videoId: 'eqmRgex_GP4'})) {
       $('section#intro.intro > .image-bg').remove();
       $('section#intro.intro > .color-overlay').remove();
     }
+    $('#top-level-wrapper.video').tubular(
+      {videoId: 'jCzxeM73eac', mute: false, repeat: false}
+    )
   }
 });
 
