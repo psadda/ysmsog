@@ -1,36 +1,45 @@
 section#people {
   .people-item {
-
     @include span-columns(6);
     @include omega(2n);
+    @include pad(3em);
 
-    @include media($small-screen-down) {
+    @include media($medium-screen-down) {
       @include fill-parent;
       @include row;
     }
 
-    padding: 3em 0 2em;
     text-align: center;
+
+    .iconbutton {
+      background-color: $base-background-color;
+      border-radius: $base-border-radius;
+      border: 1px solid $base-border-color;
+      box-shadow: 0 2px 4px darken($base-background-color, 10%);
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      padding: 3em 1em;
+      transition: all .4s;
+
+      &:hover, &:active, &:focus {
+        box-shadow: 0 4px 8px darken($base-background-color, 30%);
+        i {
+          color: $highlight;
+        }
+      }
+    }
 
     h4 {
       text-transform: uppercase;
       font-size: 1.3em;
-      padding-bottom: .5em;
-    }
-
-    p {
-      color: darken(white, 50%);
     }
 
     i {
       font-size: 4em;
       color: darken(white, 20%);
       margin-bottom: .3em;
-      transition: color .2s;
-    }
-
-    &:hover i {
-      color: $highlight;    
+      transition: color 0.4s;
     }
   }
 }
