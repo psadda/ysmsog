@@ -4,7 +4,7 @@ section.intro {
   text-transform: uppercase;
 
   .image-bg {
-    background: image_path($parallax-intro-url);
+    background: $parallax-intro-background;
     background-size: cover;
   }
 

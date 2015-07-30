@@ -22,9 +22,9 @@ $base-background-color: white;
 
 $title-text-color: white;
 
-$parallax-intro-url:		url('/images/intro.jpg') 0 0 no-repeat;
-$parallax-spacer-url:	url('/images/students.jpg') 0 0 no-repeat;
-$parallax-quote-url:		url('/images/reflection.jpg') 0 0 no-repeat;
+$parallax-intro-background: url(image_path('intro.jpg')) 0 0 no-repeat;
+$parallax-spacer-background: url(image_path('students.jpg')) 0 0 no-repeat;
+$parallax-quote-background: url(image_path('reflection.jpg')) 0 0 no-repeat;
 
 @import 'theme/owl-flexslider';
 @import 'theme/owl-theme';
@@ -33,5 +33,5 @@ $parallax-quote-url:		url('/images/reflection.jpg') 0 0 no-repeat;
 @import 'theme/intro';
 @import 'theme/people';
 @import 'theme/about';
-@import 'theme/quote';
+@import 'theme/quotes';
 @import 'theme/footer';

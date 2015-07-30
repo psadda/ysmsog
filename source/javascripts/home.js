@@ -6,8 +6,11 @@ $(function() {
   }
   if(!mobileAndTabletCheck()) {
     if($('#top-level-wrapper.index').tubular({videoId: 'eqmRgex_GP4'})) {
-      $('section#intro.intro > .image-bg').remove();
-      $('section#intro.intro > .color-overlay').remove();
+      $('section#intro > .image-bg').remove();
+      $('section#intro > .color-overlay').remove();
+      $('section#about > .image-bg').remove();
+      $('section.spacer > .image-bg').remove();
+      $('section#quotes > .image-bg').remove();
     }
     $('#top-level-wrapper.video').tubular(
       {videoId: 'jCzxeM73eac', mute: false, repeat: false}

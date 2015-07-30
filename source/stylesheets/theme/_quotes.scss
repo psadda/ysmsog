@@ -1,4 +1,4 @@
-section.quotes {
+section#quotes {
   padding: 6em 0;
 
   .title {
@@ -12,7 +12,7 @@ section.quotes {
   }
 
   .image-bg {
-    background: image_path($parallax-quote-url);
+    background: $parallax-quote-background;
     background-size: cover;
   }
 
