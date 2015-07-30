@@ -11,14 +11,14 @@
     %h1 What we give
     %ul.mini-nav
       %li
-        %a{href: '/video'}
+        = link_to '/video' do
           Watch the video &nbsp;
           %i.fa.fa-play-circle-o
       %li
-        %a{href: ''}
+        = link_to '#about' do
           Learn more &nbsp;
           %i.fa.fa-external-link
-  %a.jump-down{href: '#about'}
+  = link_to '#about', class: 'jump-down' do
     %i.fa.fa-chevron-down
 %section#about
   .container
@@ -26,13 +26,6 @@
       .split-left.split-text
         %h2 A Yale Tradition
         %p &ldquo;What We Give&rdquo; began as an idea to contribute to an enduring tradition at the Yale School of Medicine&mdash;the Service of Gratitude Ceremony. Now a staple at many health professions schools across the country, the service brings together students, faculty, and the family members of donors.
-      .split-right.split-media
-        #showcase-slider.owl-carousel.owl-theme
-          / slider items
-          .item
-            %img{alt: 'Early 20th century medical students dissecting a cadaver', :src => '/images/history.jpg'}/
-          .item
-            %img{alt: 'A medical professor', src: '/images/faculty.jpg'}/
 %section.spacer.parallax
   .image-bg{'data-stellar-background-ratio' => 0.5}
 %section#people
@@ -43,19 +36,15 @@
       .people-item
         %i.fa.fa-stethoscope
         %h4 Physicians
-        %p Ride a cutting edge, next generation front-end framework with Bourbon Neat.
       .people-item
         %i.fa.fa-heart
         %h4 Family
-        %p Styles are organised in partial Sass files, for a modular and efficient framework.
       .people-item
         %i.fa.fa-graduation-cap
         %h4 Students
-        %p Neat is simple and straight to the point. No bloat, mass features to slow you down.
       .people-item
         %i.fa.fa-book
         %h4 Historians
-        %p The code base behind Neat is super light and optimised to load faster than fast.
 %section.quotes.parallax
   .image-bg{'data-stellar-background-ratio' => 0.5}
   .container
