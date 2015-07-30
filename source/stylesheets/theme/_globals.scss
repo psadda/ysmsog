@@ -59,7 +59,7 @@ section.spacer {
   padding: 10em 0;
 
   .image-bg {
-    background: $parallax-spacer-url;
+    background: image_path($parallax-spacer-url);
     background-size: cover;
   }
 }

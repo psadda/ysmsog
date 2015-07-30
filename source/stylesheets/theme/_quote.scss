@@ -12,7 +12,7 @@ section.quotes {
   }
 
   .image-bg {
-    background: $parallax-quote-url;
+    background: image_path($parallax-quote-url);
     background-size: cover;
   }
 
