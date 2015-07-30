@@ -1,38 +1,13 @@
 %header#navigation.navigation.headroom
   .navigation-wrapper
-    / mobile menu toggle
-    %a#js-mobile-menu.navigation-menu-button{:href => ""} MENU
-    / navigation menu
+    %a#js-mobile-menu.navigation-menu-button{href: ''} Menu
     .nav
       %ul#navigation-menu
         %li.nav-link.active
-          %a{:href => "#section-intro"} Home
+          = link_to 'Home', '/'
         %li.nav-link
-          %a{:href => "#section-features"} Features
+          = link_to 'About', '/#about'
         %li.nav-link
-          %a{:href => "#section-showcase"} Showcase
+          = link_to 'Video', '/video'
         %li.nav-link
-          %a{:href => "#section-blog"} Blog
-        %li.nav-link
-          %a{:href => "#section-contact"} Contact
-        %li.nav-link.more
-          %a{:href => "javascript:void(0)"} More
-          %ul.submenu
-            %li
-              %a{:href => "javascript:void(0)"} Submenu Item
-            %li
-              %a{:href => "javascript:void(0)"} Another Item
-            %li.more
-              %a{:href => "javascript:void(0)"} Item with submenu
-              %ul.submenu
-                %li
-                  %a{:href => "javascript:void(0)"} Sub-submenu Item
-                %li
-                  %a{:href => "javascript:void(0)"} Another Item
-            %li.more
-              %a{:href => "javascript:void(0)"} Another submenu
-              %ul.submenu
-                %li
-                  %a{:href => "javascript:void(0)"} Sub-submenu
-                %li
-                  %a{:href => "javascript:void(0)"} An Item
+          = link_to 'More', '/#people'
