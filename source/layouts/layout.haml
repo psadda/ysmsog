@@ -12,4 +12,4 @@
     #top-level-wrapper{class: page_classes}
       = partial 'header'
       = yield
-      = partial 'footer'
+      = partial 'footer' unless current_page.path == 'video.html'
