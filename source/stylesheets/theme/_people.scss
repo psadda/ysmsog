@@ -4,7 +4,7 @@ section#people {
     @include omega(2n);
     @include pad(3em);
 
-    @include media($medium-screen-down) {
+    @include media($large-screen-down) {
       @include fill-parent;
       @include row;
     }

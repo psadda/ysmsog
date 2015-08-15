@@ -117,13 +117,29 @@ header.navigation {
 
       
         // NAVIGATION LINKS
+        
+        ul {
+        
+          @include media($large-screen-down) {
+            text-align: center;
+          }
+        
+        }
 
         ul li.nav-link {
 
             @include media($large-screen-down) {
                 padding-left: 0;
                 text-align: center;
-                border-bottom: solid 1px darken($navigation-background, 5%);
+                background-color: transparentize(black, 0.2);
+                margin: 2em auto !important;
+                padding: 1em;
+                width: 10em;
+                line-height: 2.5em !important;
+                
+                a {
+                  display: inline-block !important;
+                }
             }
 
             background: $navigation-background;
