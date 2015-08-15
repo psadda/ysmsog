@@ -16,28 +16,6 @@ section#quotes {
     background-size: cover;
   }
 
-  #quote-slider {
-    .owl-dots {
-      margin-top: 2em;
-
-      .owl-dot {
-        
-        span {
-          background-color: white;
-          opacity: 0.4;
-
-          &:hover {
-            opacity: 0.7;
-          }
-        }
-
-        &.active span {
-          opacity: 1;
-        }
-      }
-    }
-  }
-
   blockquote {
     @include media($medium-screen-down) {
       @include pad(0 10px);

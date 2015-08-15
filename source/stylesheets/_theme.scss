@@ -26,8 +26,6 @@ $parallax-intro-background: url(image_path('intro.jpg')) 0 0 no-repeat;
 $parallax-spacer-background: url(image_path('students.jpg')) 0 0 no-repeat;
 $parallax-quote-background: url(image_path('reflection.jpg')) 0 0 no-repeat;
 
-@import 'theme/owl-flexslider';
-@import 'theme/owl-theme';
 @import 'theme/globals';
 @import 'theme/header';
 @import 'theme/intro';
