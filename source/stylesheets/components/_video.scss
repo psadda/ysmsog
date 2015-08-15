@@ -1,9 +1,3 @@
-#main-video {
-  @include row;
-  @include fill-parent;
-  padding-top: 6em;
-}
-
 .video-wrapper {
   height: 0;
   overflow: hidden;
