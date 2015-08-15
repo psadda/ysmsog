@@ -25,6 +25,11 @@ section#about {
 			}
 		}
 
+    .split-left {
+      background-color: transparentize($base-background-color, 0.2);
+      padding: 2em;
+    }
+
     .split-right {
       @include media($large-screen) {
         @include shift(1);
