@@ -13,9 +13,6 @@ section#people {
 
     @include media($large-screen-down) {
       @include pad(1em 2em);
-    }
-
-    @include media($large-screen-down) {
       @include fill-parent;
       @include row;
     }

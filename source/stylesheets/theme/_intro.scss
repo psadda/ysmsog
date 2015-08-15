@@ -13,15 +13,16 @@ section.intro {
   }
 
   .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
     @include media($large-screen-up) {
-      padding: 5em;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
+      padding: 6em;
     }
 
     @include media($large-screen-down) {
-      padding: 5em 1em 1em 1em;
+      padding: 1em;
     }
   }
 
@@ -50,13 +51,6 @@ section.intro {
 
     @include media($large-screen-up) {
       font-size: 2em;
-      margin: 1em 0 0 0;
-    }
-
-    @include media($large-screen-down) {
-      font-size: 1em;
-      line-height: 1.5;
-      margin: 3em 0 0 0;
     }
   }
 
@@ -79,7 +73,7 @@ section.intro {
 
   a.jump-down {
     position: absolute;
-    bottom: 4em;
+    bottom: 3%;
     left: 20%;
     right: 20%;
     margin: 2em auto 0;
