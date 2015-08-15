@@ -1,8 +1,19 @@
+#main-video {
+  @include row;
+  @include fill-parent;
+  padding-top: 6em;
+}
+
 .video-wrapper {
+  height: 0;
   overflow: hidden;
+  padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
   position: relative;
-  width: 960px;
-  height: 540px;
-  margin: auto;
-  margin-top: 2em;
+
+  embed,
+  object,
+  iframe {
+    @include position(absolute, 0px null null 0px);
+    @include size(100%);
+  }
 }

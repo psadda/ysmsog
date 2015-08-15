@@ -11,9 +11,6 @@ $(function() {
       $('section.spacer > .image-bg').remove();
       $('section#quotes > .image-bg').remove();
     }
-    $('#top-level-wrapper.video').tubular(
-      {videoId: 'jCzxeM73eac', mute: false, repeat: false}
-    )
   }
 });
 
