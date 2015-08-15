@@ -19,15 +19,6 @@ $(function() {
 });
 
 $(function() {
-
-  // PARALLAX BACKGROUNDS FOR DESKTOPS
-  
-  if ($(this).width() > 768) {
-    $(window).stellar({
-      horizontalScrolling: false
-    });
-  }
-
   $("#navigation").headroom();
 
   // MOBILE NAVIGATION MENU DROPDOWN
@@ -91,15 +82,6 @@ $(function() {
       }
     }
 
-  });
-
-  // OWL CAROUSEL SLIDERS
-
-  $("#quote-slider").owlCarousel({
-    items : 1,
-    loop : true,
-        autoplay : true,
-      autoplayTimeout : 4000
   });
 
   // END OF SCRIPTS
