@@ -1,4 +1,8 @@
 section#people {
+  @include media($large-screen-up) {
+    background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll bottom left;
+  }
+
   .people-item {
     @include span-columns(6);
     @include omega(2n);
