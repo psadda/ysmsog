@@ -23,10 +23,6 @@ section.intro {
     @include media($large-screen-down) {
       padding: 5em 1em 1em 1em;
     }
-
-    .color-overlay {
-      @include filter(blur(5em));
-    }
   }
 
   h1 {

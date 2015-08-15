@@ -7,7 +7,6 @@ $(function() {
   if(!mobileAndTabletCheck()) {
     if($('#top-level-wrapper.index').tubular({videoId: 'eqmRgex_GP4'})) {
       $('section#intro > .image-bg').remove();
-      $('section#intro > .color-overlay').remove();
       $('section#about > .image-bg').remove();
       $('section.spacer > .image-bg').remove();
       $('section#quotes > .image-bg').remove();
