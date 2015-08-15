@@ -1,14 +1,8 @@
 section#quotes {
   padding: 6em 0;
 
-  .title {
-    h2, p {
+  h2 {
       color: $title-text-color;
-    }
-    p {
-      text-transform: none;
-      text-align: left;
-    }
   }
 
   .image-bg {
@@ -16,7 +10,7 @@ section#quotes {
     background-size: cover;
   }
 
-  blockquote {
+  p {
     @include media($medium-screen-down) {
       @include pad(0 10px);
       font-size: 1.6em;
@@ -29,29 +23,9 @@ section#quotes {
     text-align: center;
     font-style: normal;
     color: white;
-    font-size: 2em;
     margin: 0;
     border: 0;
     padding-left: 0;
     cursor: move;
-
-    cite {
-      @include media($medium-screen-down) {
-        font-size: .7em;
-      }
-
-      padding-top: 1.5em;
-      font-size: .6em;
-      color: white;
-      display: block;
-
-      a {
-        color: darken($highlight, 20%);
-
-        &:hover {
-          color: darken($highlight, 30%);
-        }
-      }
-    }
   }
 }
