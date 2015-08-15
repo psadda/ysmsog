@@ -93,22 +93,14 @@ $(function() {
 
   });
 
-  // RESPONSIVE VIDEOS - FITVIDS
-
-  $('.fitvids').fitVids();
-
   // OWL CAROUSEL SLIDERS
 
-  $("#showcase-slider, #quote-slider").owlCarousel({
+  $("#quote-slider").owlCarousel({
     items : 1,
     loop : true,
         autoplay : true,
       autoplayTimeout : 4000
   });
-
-  // FLEXSLIDER
-
-  $("#gallery-slider").flexslider();
 
   // END OF SCRIPTS
 
