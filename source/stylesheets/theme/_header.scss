@@ -70,10 +70,10 @@ header.navigation {
             display: block;
             float: right;
             font-family: $sans-serif;
-            font-weight: 700;
-            line-height: $navigation-height;
-            margin: 0;
-            padding-right: 1em;
+            line-height: 1;
+            margin: 1em;
+            font-size: 2em;
+            padding: 0.5em;
             text-transform: uppercase;
 
             @include media ($horizontal-bar-mode) {
@@ -85,7 +85,6 @@ header.navigation {
             }
         }
 
-      
         // NAVIGATION MENU
 
         .nav {
@@ -131,7 +130,8 @@ header.navigation {
             @include media($large-screen-down) {
                 padding-left: 0;
                 text-align: center;
-                background-color: transparentize(black, 0.2);
+                background-color: $base-background-color;
+                border: $base-border;
                 margin: 2em auto !important;
                 padding: 1em;
                 width: 10em;
