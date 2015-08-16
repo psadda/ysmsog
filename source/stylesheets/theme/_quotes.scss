@@ -2,7 +2,13 @@ section#quotes {
   padding: 6em 0;
 
   h2 {
-      color: $title-text-color;
+    color: $title-text-color;
+  }
+
+  .container {
+    @include media($small-screen-down) {
+      margin: 0 2em;
+    }      
   }
 
   .image-bg {
@@ -11,16 +17,19 @@ section#quotes {
   }
 
   p {
-    @include media($medium-screen-down) {
-      @include pad(0 10px);
-      font-size: 1.6em;
+    font-family: $base-font-family;
+    font-size: 1.6em;
+
+    @include media($large-screen-up) {
+      width: 50%;
+      margin: 0 auto;
     }
 
     @include media($small-screen-down) {
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
 
-    text-align: center;
+    text-align: left;
     font-style: normal;
     color: white;
     margin: 0;

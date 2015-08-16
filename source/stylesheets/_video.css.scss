@@ -1,15 +1,54 @@
+#top-level-wrapper.video > .container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
 #main-video {
   @include row;
   @include fill-parent;
-  padding-top: 6em;
 }
 
 #top-level-wrapper.video {
   background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll bottom left;
+
+  footer.footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+  header.navigation {
+    $navigation-pinned-color: darken($base-background-color, 40%);
+    $navigation-pinned-color-hover: darken($navigation-pinned-color, 40%);
+
+    background-color: transparentize($base-background-color, 0.2) !important;
+
+    .navigation-menu-button {
+      color: $navigation-pinned-color !important;
+      &:hover {
+        color: $navigation-pinned-color-hover !important;
+      }
+    }
+
+    ul li.nav-link {
+      &.active a {
+        color: $navigation-pinned-color-hover !important;
+      }
+
+      &:hover a {
+        color: $navigation-pinned-color-hover !important;
+      }
+
+      a {
+        color: $navigation-pinned-color !important;
+      }
+    }
+  }
 }
 
 .video-wrapper {
   border: 1em solid transparentize($base-border-color, 0.3);
+  box-shadow: 0 0 8px darken($base-background-color, 40%);
   background-clip: padding-box;
   border-radius: 3px;
 }

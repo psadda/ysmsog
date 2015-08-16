@@ -15,8 +15,6 @@ $(function() {
 });
 
 $(function() {
-  $("#navigation").headroom();
-
   // MOBILE NAVIGATION MENU DROPDOWN
 
   var menu = $('#navigation-menu');
@@ -32,23 +30,16 @@ $(function() {
   $(menuToggle).on('click', function(e) {
     e.preventDefault();
     menu.slideToggle(function(){
-        hideMenu();
+      hideMenu();
     });
   });
 
   $(menuLink).on('click', function() {
-    if( $(".navigation-menu-button").css('display') === 'block') {
+    if($(".navigation-menu-button").css('display') === 'block') {
       menu.slideToggle(function(){
         hideMenu();
       });
     }
-  });
-
-  // ADD ACTIVE CLASS TO NAVIGATION ITEM WHEN CLICKED
-
-  $('.navigation a').on('click', function() {
-    $('.navigation li').removeClass('active');
-    $(this).closest('li').addClass('active');
   });
 
   // SMOOTH SCROLLING BETWEEN SECTIONS 

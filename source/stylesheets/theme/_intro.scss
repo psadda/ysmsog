@@ -22,6 +22,7 @@ section.intro {
     }
 
     @include media($large-screen-down) {
+      transform: translateY(-60%);
       padding: 1em;
     }
   }
@@ -29,6 +30,8 @@ section.intro {
   h1 {
     text-align: center;
     color: white;
+    @include row;
+    @include fill-parent;
 
     @include media($large-screen-up) {
       font-size: 5em;
@@ -46,8 +49,9 @@ section.intro {
     font-family: $heading-font-family;
     letter-spacing: $heading-letter-spacing;
     text-align: center;
-    font-family: $sans-serif;
     text-transform: uppercase;
+    @include row;
+    @include fill-parent;
 
     @include media($large-screen-up) {
       font-size: 2em;
@@ -55,7 +59,10 @@ section.intro {
   }
 
   ul.mini-nav {
+    @include row;
+    @include fill-parent;
     text-align: center;
+    font-family: $base-font-family;
 
     li {
       display: inline-block;

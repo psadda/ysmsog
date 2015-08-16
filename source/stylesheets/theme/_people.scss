@@ -40,28 +40,30 @@ section#people {
         background-clip: padding-box;
       }
 
-      box-shadow: 0 0 8px darken($base-background-color, 20%);
+      box-shadow: 0 0 8px darken($base-background-color, 30%);
       cursor: pointer;
       transition: all .4s;
 
       &:hover, &:active, &:focus {
-        box-shadow: 0 4px 8px darken($base-background-color, 30%);
-        i {
+        box-shadow: 0 4px 8px darken($base-background-color, 50%);
+        h4, i {
           color: $highlight;
         }
       }
     }
 
     h4 {
-      text-transform: uppercase;
       font-size: 1.3em;
     }
 
     i {
       font-size: 4em;
-      color: darken(white, 20%);
       margin-bottom: .3em;
       transition: color 0.4s;
+    }
+
+    h4, i {
+      color: darken(white, 20%);
     }
   }
 }

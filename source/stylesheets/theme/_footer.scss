@@ -1,15 +1,15 @@
 footer.footer {
-  margin-top: 2em;
 	padding: 0 1em;
-
-  background-color: $base-background-color;
+  width: 100%;
+  background-color: transparentize($base-background-color, 0.2);
 
 	.container {
 		border-top: dashed 2px darken(white, 5%);
 	}
 
 	p.copyright {
-		
+    font-family: $base-font-family;
+
 		@include media($medium-screen-down) {
 			@include fill-parent;
       @include row;
