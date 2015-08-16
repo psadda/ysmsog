@@ -3,62 +3,58 @@
   <head>
     <title>Yale Service of Gratitude</title>
     <script src='//code.jquery.com/jquery-2.1.4.min.js'></script>
-    <link href="/ysmsog/stylesheets/all-18b152d8.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="/ysmsog/javascripts/all-c11087a6.js" type="text/javascript"></script>
+    <link href="/ysmsog/stylesheets/all-64b5bd0c.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/ysmsog/javascripts/all-a2b1018d.js" type="text/javascript"></script>
     <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'>
     <link href='//fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet'>
     <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
   </head>
-  <body>
+  <body class='index'>
     <div class='index' id='top-level-wrapper'>
       <header class='navigation headroom' id='navigation'>
         <div class='navigation-wrapper'>
-          <a class='navigation-menu-button' href='' id='js-mobile-menu'>Menu</a>
+          <a class='navigation-menu-button' href='' id='js-mobile-menu' title='Menu'>
+            <i class='fa fa-navicon'></i>
+          </a>
           <div class='nav'>
             <ul id='navigation-menu'>
-              <li class='nav-link active'>
-                <a href="/ysmsog">Home</a>
+              <li class='nav-link'>
+                <a href="/">Home</a>
               </li>
               <li class='nav-link'>
-                <a href="/ysmsog/#about">About</a>
+                <a href="/#about">About</a>
               </li>
               <li class='nav-link'>
-                <a href="/ysmsog/video">Video</a>
+                <a href="/video">Video</a>
               </li>
               <li class='nav-link'>
-                <a href="/ysmsog/#people">More</a>
+                <a href="/#people">More</a>
               </li>
             </ul>
           </div>
         </div>
       </header>
       <section class='intro parallax' id='intro'>
-        <div class='image-bg' data-stellar-background-ratio='0.2'></div>
+        <div class='image-bg'></div>
+        <div class='color-overlay'></div>
         <div class='container'>
-          <div class='color-overlay'></div>
-          <p>
-            We make a living
-            <br>
-            by what we get,
-            <br>
-            but we make a life by
-          </p>
+          <p>We make a living<br>by what we get,<br>but we make a life by</p>
           <h1>What we give</h1>
           <ul class='mini-nav'>
             <li>
-              <a href="/ysmsog/video">Watch the video &nbsp;
-              <i class='fa fa-play-circle-o'></i>
+              <a href="/video">Watch the video &nbsp;
+              <i class='fa fa-play-circle'></i>
               </a>
             </li>
             <li>
-              <a href="#about">Learn more &nbsp;
+              <a href="/#about">Learn more &nbsp;
               <i class='fa fa-external-link'></i>
               </a>
             </li>
           </ul>
         </div>
-        <a class="jump-down" href="#about"><i class='fa fa-chevron-down'></i>
+        <a class="jump-down" href="/#about"><i class='fa fa-chevron-down'></i>
         </a>
       </section>
       <section id='about'>
@@ -72,7 +68,7 @@
         </div>
       </section>
       <section class='spacer parallax'>
-        <div class='image-bg' data-stellar-background-ratio='0.5'></div>
+        <div class='image-bg'></div>
       </section>
       <section id='people'>
         <div class='container'>
@@ -108,66 +104,44 @@
         </div>
       </section>
       <section class='parallax' id='quotes'>
-        <div class='image-bg' data-stellar-background-ratio='0.5'></div>
+        <div class='image-bg'></div>
         <div class='container'>
           <div class='color-overlay'></div>
           <div class='title'>
             <h2>A place to reflect</h2>
-            <p>The Service of Gratitude provides a space to reflect openly on the impact that anatomy and the art of dissection had on students. It also provides an opportunity to celebrate the lives of the donors and thank them for their precious gift. The event commonly includes songs, artwork, poetry, recitations, and reflection.</p>
           </div>
-          <div class='owl-carousel owl-theme' id='quote-slider'>
-            <div class='item'>
-              <blockquote>
-                We make a living by what we get, but we make a life by what we give.
-                <cite>
-                  Winston Churchill,
-                  <a href='#'>Prime Minister</a>
-                </cite>
-              </blockquote>
-            </div>
-            <div class='item'>
-              <blockquote>
-                We make a living by what we get, but we make a life by what we give.
-                <cite>
-                  Winston Churchill,
-                  <a href='#'>Prime Minister</a>
-                </cite>
-              </blockquote>
-            </div>
-          </div>
+          <p>The Service of Gratitude provides a space to reflect openly on the impact that anatomy and the art of dissection had on students. It also provides an opportunity to celebrate the lives of the donors and thank them for their precious gift. The event commonly includes songs, artwork, poetry, recitations, and reflection.</p>
         </div>
       </section>
-      <footer class='footer'>
-        <div class='container'>
-          <p class='copyright'>
-            Copyright &copy; 2015
-            <a href="//anatomy.yalemedicine.org">Yale Department of Anatomy</a>
-            - All Rights Reserved.
-          </p>
-          <ul class='social'>
-            <li>
-              <a href='#'>
-                <i class='fa fa-facebook'></i>
-              </a>
-            </li>
-            <li>
-              <a href='#'>
-                <i class='fa fa-twitter'></i>
-              </a>
-            </li>
-            <li>
-              <a href='#'>
-                <i class='fa fa-google-plus'></i>
-              </a>
-            </li>
-            <li>
-              <a href='#'>
-                <i class='fa fa-instagram'></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+      <div class='push'></div>
     </div>
+    <footer class='footer'>
+      <div class='container'>
+        <p class='copyright'>
+          Copyright &copy; 2015
+          <a href="#">Praneeth Sadda</a>
+           and
+          <a href="#">Yale Med Films</a>
+          - All Rights Reserved.
+        </p>
+        <ul class='social'>
+          <li>
+            <a href='#'>
+              <i class='fa fa-facebook'></i>
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              <i class='fa fa-twitter'></i>
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              <i class='fa fa-instagram'></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
