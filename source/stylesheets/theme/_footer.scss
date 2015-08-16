@@ -2,6 +2,7 @@ footer.footer {
 	padding: 0 1em;
   width: 100%;
   background-color: transparentize($base-background-color, 0.2);
+  background-color: $base-background-color;
 
 	.container {
 		border-top: dashed 2px darken(white, 5%);

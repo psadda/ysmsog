@@ -1,7 +1,7 @@
 #top-level-wrapper.video > .container {
   position: relative;
   top: 50%;
-  transform: translateY(-60%);
+  transform: translateY(-55%);
 }
 
 #main-video {
@@ -13,8 +13,16 @@
   background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll bottom left;
 
   footer.footer {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    top: 100%;
+
+    @include media($large-screen-down) {
+      top: 120%;
+    }
+
+    @include media($medium-screen-down) {
+      top: 100% !important;
+    }
   }
 
   header.navigation {
