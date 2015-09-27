@@ -45,7 +45,7 @@ section#people {
       transition: all .4s;
 
       &:hover, &:active, &:focus {
-        box-shadow: 0 4px 8px darken($base-background-color, 50%);
+        box-shadow: 0 0 24px darken($base-background-color, 50%);
         h4, i {
           color: $highlight;
         }
@@ -54,6 +54,7 @@ section#people {
 
     h4 {
       font-size: 1.3em;
+      transition: color 0.4s;
     }
 
     i {
