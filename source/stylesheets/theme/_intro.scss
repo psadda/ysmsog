@@ -8,14 +8,17 @@ section.intro {
   text-transform: uppercase;
 
   .image-bg {
-    background: $parallax-intro-background;
-    background-size: cover;
+    background-image: $parallax-intro-background;
   }
 
   .container {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 
     @include media($large-screen-up) {
       padding: 6em;

@@ -22,9 +22,9 @@ $base-background-color: white;
 
 $title-text-color: white;
 
-$parallax-intro-background: url(image_path('intro.jpg')) 0 0 no-repeat fixed;
-$parallax-spacer-background: url(image_path('students.jpg')) 0 0 no-repeat fixed;
-$parallax-quote-background: url(image_path('reflection.jpg')) 0 0 no-repeat fixed;
+$parallax-intro-background: url(image_path('intro.jpg'));
+$parallax-spacer-background: url(image_path('students.jpg'));
+$parallax-quote-background: url(image_path('reflection.jpg'));
 
 @import 'theme/globals';
 @import 'theme/header';

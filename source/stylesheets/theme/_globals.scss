@@ -59,8 +59,7 @@ section.spacer {
   padding: 13em 0;
 
   .image-bg {
-    background: $parallax-spacer-background;
-    background-size: cover;
+    background-image: $parallax-spacer-background;
   }
 }
 
@@ -73,6 +72,15 @@ section.spacer {
   top: 0;
   left: 0;
   z-index: -200;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @include media($large-screen-down) {
+    background-attachment: scroll;
+  }
 }
 
 .color-overlay {
