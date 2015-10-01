@@ -26,7 +26,7 @@ section#about {
 		}
 
     .split-left {
-      @include linear-gradient(to right, $slightly-transparent 0%, $slightly-transparent 90%, $fully-transparent 100%);
+      @include linear-gradient(to right, $slightly-transparent 0%, $slightly-transparent 90%, $fully-transparent 100%, $fallback: $fully-transparent);
       padding: 0 2em;
 
       p {
