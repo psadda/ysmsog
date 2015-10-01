@@ -1,3 +1,6 @@
+$slightly-transparent: transparentize($base-background-color, 0.2);
+$fully-transparent: transparentize($base-background-color, 1.0);
+
 section#about {
 	padding: 1em 0 5em;
 
@@ -23,7 +26,7 @@ section#about {
 		}
 
     .split-left {
-      background-color: transparentize($base-background-color, 0.2);
+      @include linear-gradient(to right, $slightly-transparent 0%, $slightly-transparent 90%, $fully-transparent 100%);
       padding: 0 2em;
 
       p {
