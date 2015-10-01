@@ -14,18 +14,13 @@ section.intro {
   .container {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    @include transform(translateY(-50%));
 
     @include media($large-screen-up) {
       padding: 6em;
     }
 
     @include media($large-screen-down) {
-      transform: translateY(-60%);
       padding: 1em;
     }
   }
