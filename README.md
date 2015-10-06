@@ -1,2 +1,4 @@
-Yale School of Medicine Service of Gratitude 2015
-=================================================
+What we Give
+============
+
+The website for Yale School of Medicine's 2015 Service of Gratitude.
