@@ -1,7 +1,9 @@
-#top-level-wrapper.video > .container {
-  position: relative;
-  top: 50%;
-  @include transform(translateY(-50%));
+@include media($small-screen-down) {
+  #top-level-wrapper.video > .container {
+    position: relative;
+    top: 50%;
+    @include transform(translateY(-65%));
+  }
 }
 
 #main-video {
@@ -55,6 +57,11 @@
 }
 
 .video-wrapper {
+  position: relative;
+  top: 5em;
+  @include media($small-screen-down) {
+    top: 0;
+  }
   border: 1em solid transparentize($base-border-color, 0.3);
   box-shadow: 0 0 8px darken($base-background-color, 40%);
   background-clip: padding-box;
