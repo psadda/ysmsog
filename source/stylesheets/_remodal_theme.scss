@@ -7,11 +7,19 @@
 .remodal {
   h1 {
     font-size: 2em;
+
+    @include media($large-screen-down) {
+      font-size: 1.6em;
+    }
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1.6em;
     text-align: left;
+
+		@include media($large-screen-down) {
+      font-size: 1.2em;
+		}
   }
 
   .dialog-banner {
@@ -44,6 +52,9 @@
 
   .content-area {
     padding: 35px;
+    @include media($large-screen-down) {
+      padding: 16px;
+    }
   }
 }
 
