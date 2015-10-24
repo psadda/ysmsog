@@ -15,6 +15,10 @@ $(function() {
 });
 
 $(function() {
+  // MODALS
+
+  $('.remodal').remodal();
+
   // MOBILE NAVIGATION MENU DROPDOWN
 
   var menu = $('#navigation-menu');

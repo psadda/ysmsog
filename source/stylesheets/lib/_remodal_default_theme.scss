@@ -2,6 +2,51 @@
    Remodal's default mobile first theme
    ========================================================================== */
 
+/* Customizations */
+
+.remodal {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .dialog-banner {
+    overflow: hidden;
+    height: 250px;
+    max-height: 250px;
+    background-color: #444;
+    background-repeat: no-repeat;
+  }
+
+  #faculty-banner {
+    background-image: url(image_path('faculty.jpg'));
+    background-position: center left;
+  }
+
+  #historians-banner {
+    background-image: url(image_path('history.jpg'));
+    background-position: top center;
+  }
+
+  #students-banner {
+    background-image: url(image_path('students-banner.jpg'));
+    background-position: top right;
+  }
+
+  #family-banner {
+    background-image: url(image_path('family.jpg'));
+    background-position: top right;
+  }
+
+  .content-area {
+    padding: 35px;
+  }
+}
+
 /* Default theme styles for the background */
 
 .remodal-bg.remodal-is-opening,
@@ -12,7 +57,7 @@
 /* Default theme styles of the overlay */
 
 .remodal-overlay {
-  background: rgba(43, 46, 56, 0.9);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .remodal-overlay.remodal-is-opening,
@@ -40,7 +85,6 @@
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 10px;
-  padding: 35px;
 
   transform: translate3d(0, 0, 0);
 
@@ -73,7 +117,7 @@
 .remodal-close {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 
   display: block;
   overflow: visible;
@@ -91,11 +135,13 @@
   border: 0;
   outline: 0;
   background: transparent;
+  border-radius: 0;
 }
 
 .remodal-close:hover,
 .remodal-close:focus {
   color: #2b2e38;
+  background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .remodal-close:before {

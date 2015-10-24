@@ -19,27 +19,28 @@
         %p &ldquo;What We Give&rdquo; began as an idea to contribute to an enduring tradition at the Yale School of Medicine&mdash;the Service of Gratitude Ceremony. Now a staple at many health professions schools across the country, the service brings together students, faculty, and the family members of donors.
 %section.spacer.parallax
   .image-bg
+  .color-overlay
 %section#people
   .container
     .title
       %h2 Bringing people together
     .people-items
       .people-item
-        .iconbutton
-          %i.fa.fa-stethoscope
-          %h4 Physicians
-      .people-item
-        .iconbutton
-          %i.fa.fa-heart
-          %h4 Family
-      .people-item
-        .iconbutton
+        %a.iconbutton{href: "/#students"}
           %i.fa.fa-graduation-cap
           %h4 Students
       .people-item
-        .iconbutton
+        %a.iconbutton{href: "/#family"}
+          %i.fa.fa-heart
+          %h4 Family
+      .people-item
+        %a.iconbutton{href: "/#historians"}
           %i.fa.fa-book
           %h4 Historians
+      .people-item
+        %a.iconbutton{href: "/#faculty"}
+          %i.fa.fa-stethoscope
+          %h4 Faculty
 %section#quotes.parallax
   .image-bg
   .container
@@ -47,3 +48,4 @@
     .title
       %h2 A place to reflect
     %p The Service of Gratitude provides a space to reflect openly on the impact that anatomy and the art of dissection had on students. It also provides an opportunity to celebrate the lives of the donors and thank them for their precious gift. The event commonly includes songs, artwork, poetry, recitations, and reflection.
+= partial 'dialogs'

@@ -43,6 +43,7 @@ section#people {
       box-shadow: 0 0 8px darken($base-background-color, 30%);
       cursor: pointer;
       transition: all .4s;
+      display: block;
 
       &:hover, &:active, &:focus {
         box-shadow: 0 0 24px darken($base-background-color, 50%);
