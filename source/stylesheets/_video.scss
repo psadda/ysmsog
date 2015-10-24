@@ -15,16 +15,8 @@
   background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll bottom left;
 
   footer.footer {
-    position: absolute;
-    top: 100%;
-
-    @include media($large-screen-down) {
-      top: 120%;
-    }
-
-    @include media($medium-screen-down) {
-      top: 100% !important;
-    }
+    position: relative;
+    top: 5em;
   }
 
   header.navigation {
@@ -59,6 +51,7 @@
 .video-wrapper {
   position: relative;
   top: 5em;
+  margin-bottom: 5em;
   @include media($small-screen-down) {
     top: 0;
   }
