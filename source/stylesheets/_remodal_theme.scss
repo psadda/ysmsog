@@ -7,8 +7,10 @@
 .remodal {
   h1 {
     font-size: 2em;
+    color: $base-font-color !important;
 
     @include media($large-screen-down) {
+      margin-bottom: 0.6em;
       font-size: 1.6em;
     }
   }
@@ -16,6 +18,9 @@
   p {
     font-size: 1.6em;
     text-align: left;
+    font-family: $base-font-family;
+    color: $base-font-color;
+    margin: 0;
 
 		@include media($large-screen-down) {
       font-size: 1.2em;
