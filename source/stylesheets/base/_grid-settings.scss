@@ -20,5 +20,7 @@ $medium-screen-down: new-breakpoint(max-width $medium-screen 4);
 $small-screen-down: new-breakpoint(max-width $small-screen 4);
 
 // Height Breakpoints -- don't change the grid
+$large-height: em(750);
 $medium-height: em(600);
+$medium-small-height: em(500);
 $small-height: em(315);

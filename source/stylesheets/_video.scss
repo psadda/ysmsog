@@ -1,29 +1,43 @@
-@include media($small-screen-down) {
-  #top-level-wrapper.video > .container {
-    position: relative;
-    top: 50%;
-    @include transform(translateY(-65%));
+#main-video {
+  @include row;
+  @include span-columns(8);
+  @include shift(2);
+  @include media($small-screen-down) {
+    @include fill-parent;
+    @include shift(0);
+  }
+  margin-top: 15vh;
+}
+
+@media screen and (max-height: $small-height) {
+  #main-video {
+    margin-top: -6.5%;
   }
 }
 
-#main-video {
-  @include row;
-  @include fill-parent;
+@media screen and (max-height: $medium-small-height) {
+  #main-video {
+    margin-top: -4%;
+  }
+}
+
+@media screen and (max-height: $medium-height) {
+  .footer {
+    display: none;
+  }
 }
 
 #top-level-wrapper.video {
   background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll bottom left;
 
   footer.footer {
-    position: relative;
-    top: 5em;
+    position: fixed;
+    bottom: 0em;
   }
 
   header.navigation {
     $navigation-pinned-color: darken($base-background-color, 40%);
     $navigation-pinned-color-hover: darken($navigation-pinned-color, 40%);
-
-    background-color: transparentize($base-background-color, 0.2) !important;
 
     .navigation-menu-button {
       color: $navigation-pinned-color !important;
@@ -49,12 +63,6 @@
 }
 
 .video-wrapper {
-  position: relative;
-  top: 5em;
-  margin-bottom: 5em;
-  @include media($small-screen-down) {
-    top: 0;
-  }
   border: 1em solid transparentize($base-border-color, 0.3);
   box-shadow: 0 0 8px darken($base-background-color, 40%);
   background-clip: padding-box;
