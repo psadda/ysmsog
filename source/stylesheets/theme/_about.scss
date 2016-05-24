@@ -2,15 +2,12 @@ $slightly-transparent: transparentize($base-background-color, 0.2);
 $fully-transparent: transparentize($base-background-color, 1.0);
 
 section#about {
-	padding: 1em 0 5em;
-
   @include media($large-screen-up) {
     background: $base-background-color url(image_path('tools.jpg')) no-repeat scroll right;
   }
 
 	.split {
 		@include clearfix;
-		margin: 5em 0 0 0;
 
 		.split-left,
 		.split-right {
@@ -40,34 +37,5 @@ section#about {
         }
       }
     }
-
-		.split-left.float-right {
-			float: right;
-
-			&.split-text {				
-				@include media($large-screen-up) {
-					padding-left: 1.5em;
-				}
-			}
-		}
-
-		.split-right.float-left {
-			float: left;
-		}
-
-		.split-media {
-			#showcase-slider .item img{
-			    display: block;
-			    width: 100%;
-			    height: auto;
-			    cursor: move;
-			}
-		}
-		
-		.img {
-			@include span-columns(3);
-			@include omega(5n);
-			margin-bottom: 1em;
-		}
 	}
 }

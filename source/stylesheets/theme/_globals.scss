@@ -4,31 +4,12 @@ body {
   color: lighten(black, 40%);
 }
 
-p.lead {
-  font-size: 1.25em;
-  opacity: .5;
-  padding: .8em 0 0 0;
-}
-
-blockquote {
-  font-style: italic;
-  color: darken(white, 30%);
-  font-size: 1.1em;
-  border-left: solid 3px darken(white, 15%);
-}
-
 a {
   color: $highlight;
 
   &:hover {
     color: darken($highlight, 5%);
   }
-}
-
-input, 
-textarea, 
-button {
-  font-family: $sans-serif !important;
 }
 
 /* layout */
@@ -47,11 +28,11 @@ html, body, #top-level-wrapper, section.intro, .split, .split-text {
 
 section {
   background-color: $base-background-color;
-  padding: 6em 0 3em;
-  position: relative;
+  padding: 6em 0 5em;
 }
 
 section.parallax {
+  position: relative;
   background-color: transparent;
 }
 
@@ -87,46 +68,4 @@ section.spacer {
   left: 0;
   background-color: transparentize(black, 0.3);
   z-index: -100;
-}
-
-/* title section */
-.title {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 3em;
-
-  hr {
-    border: solid 2px rgba(0,0,0,0.1);
-    margin: 1em auto 1.5em;
-
-    &.small {
-      width: 50px;  
-    }
-  }
-
-  p {
-    opacity: 0.5;
-    font-size: 1.25em
-  }
-}
-
-/* buttons */
-a.button.alt, 
-a.button.large.alt {
-  background: $highlight-2;
-
-  &:hover {
-    background: lighten($highlight-2, 8%);
-  }
-}
-
-a.button.large {
-  background: $highlight;
-  text-transform: uppercase;
-  margin-top: 1em;
-  padding: 1em 2em;
-
-  &:hover {
-    background: lighten($highlight, 8%);
-  }
 }

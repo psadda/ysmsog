@@ -1,4 +1,4 @@
-section#people {
+section#more {
   @include media($large-screen-up) {
     background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll bottom left;
   }
@@ -11,6 +11,13 @@ section#people {
     @include media($large-screen-up) {
       @include shift(2);
     }
+    margin-bottom: 1em;
+  }
+
+  h2#people {
+    margin-top: -0.5em;
+    padding-top: 0.5em;
+    text-align: center;
   }
 
   .people-item {
