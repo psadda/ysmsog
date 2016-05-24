@@ -3,16 +3,26 @@ section#people {
     background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll bottom left;
   }
 
-  .people-item {
-    @include span-columns(6);
-    @include omega(2n);
+  @include media($large-screen-down) {
+    background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll center;
+  }
 
+  .people-items {
     @include media($large-screen-up) {
-      @include pad(3em);
+      @include shift(2);
+    }
+  }
+
+  .people-item {
+    @include media($large-screen-up) {
+      @include shift(1);
+      @include span-columns(3);
+      @include omega(2n);
+      @include pad(1em);
     }
 
     @include media($large-screen-down) {
-      @include pad(1em 2em);
+      @include pad(1em 3em);
       @include fill-parent;
       @include row;
     }
@@ -21,23 +31,22 @@ section#people {
 
     .iconbutton {
       background-color: $base-background-color;
+      background-clip: padding-box;
+      border: 1em solid transparentize($base-border-color, 0.5);
 
       @include media($large-screen-down) {
         border-radius: $base-border-radius;
         width: 100%;
         height: 100%;
         padding: 1em 1em 0em 1em;
-        border: 1px solid $base-border-color;
       }
 
       @include media($large-screen-up) {
         border-radius: 50%;
-        width: 17em;
-        height: 17em;
-        padding: 4em 1em 0em 1em;
+        width: 14em;
+        height: 14em;
+        padding: 2.75em 1em 0em 1em;
         margin: 0 auto;
-        border: 1em solid transparentize($base-border-color, 0.5);
-        background-clip: padding-box;
       }
 
       box-shadow: 0 0 8px darken($base-background-color, 30%);
@@ -55,6 +64,9 @@ section#people {
 
     h4 {
       font-size: 1.3em;
+      letter-spacing: normal !important;
+      text-transform: lowercase !important;
+      font-variant: small-caps;
       transition: color 0.4s;
     }
 
@@ -64,8 +76,12 @@ section#people {
       transition: color 0.4s;
     }
 
-    h4, i {
+    i {
       color: darken(white, 20%);
+    }
+
+    h4 {
+      color: darken(white, 40%);
     }
   }
 }
