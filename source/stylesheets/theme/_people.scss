@@ -1,17 +1,26 @@
 section#more {
-  @include media($large-screen-up) {
+  @include media($medium-screen-up) {
     background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll bottom left;
   }
 
-  @include media($large-screen-down) {
-    background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll center;
+  @include media($medium-screen-down) {
+    background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll bottom center;
   }
 
   .people-items {
     @include media($large-screen-up) {
-      @include shift(2);
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
     }
-    margin-bottom: 1em;
+    @include media($large-screen-down) {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include media($medium-screen-down) {
+      width: 100%;
+    }
   }
 
   h2#people {
@@ -21,14 +30,13 @@ section#more {
   }
 
   .people-item {
-    @include media($large-screen-up) {
-      @include shift(1);
-      @include span-columns(3);
+    @include media($medium-screen-up) {
+      @include span-columns(2);
       @include omega(2n);
       @include pad(1em);
     }
 
-    @include media($large-screen-down) {
+    @include media($medium-screen-down) {
       @include pad(1em 3em);
       @include fill-parent;
       @include row;
@@ -41,14 +49,14 @@ section#more {
       background-clip: padding-box;
       border: 1em solid transparentize($base-border-color, 0.5);
 
-      @include media($large-screen-down) {
+      @include media($medium-screen-down) {
         border-radius: $base-border-radius;
         width: 100%;
         height: 100%;
         padding: 1em 1em 0em 1em;
       }
 
-      @include media($large-screen-up) {
+      @include media($medium-screen-up) {
         border-radius: 50%;
         width: 14em;
         height: 14em;

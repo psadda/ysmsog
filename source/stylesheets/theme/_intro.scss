@@ -51,6 +51,30 @@ section.intro {
     @include fill-parent;
   }
 
+  @media screen and (max-height: $medium-height) {
+    p {
+      margin-top: -15%;
+      float: left;
+    }
+  }
+
+  @media screen and (max-height: $small-height) {
+    p {
+      margin-top: 0;
+      float: none;
+    }
+    a.jump-down {
+      display: none !important;
+    }
+    .container {
+      position: static;
+      @include transform(none);
+    }
+    ul.mini-nav {
+      margin-bottom: 1em;
+    }
+  }
+
   ul.mini-nav {
     @include row;
     @include fill-parent;
