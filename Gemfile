@@ -3,9 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'middleman', '~> 4.1.8'
-
-gem 'htmlentities'
-gem 'redcarpet'
+gem 'middleman-sprockets', '~> 4.0.0.rc.2'
 
 gem 'bitters'
 gem 'bourbon'
