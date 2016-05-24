@@ -28,18 +28,17 @@ section.intro {
   h1 {
     text-align: center;
     color: white;
+    margin: 1.25em 0 1.25em 0;
+    line-height: 1.5;
     @include row;
     @include fill-parent;
 
     @include media($large-screen-up) {
-      font-size: 5em;
-      margin: 0.6em 0;
+      font-size: 2.5em;
     }
 
     @include media($large-screen-down) {
       font-size: 2em;
-      margin: 1.25em 0 1.25em 0;
-      line-height: 1.5;
     }
   }
 
@@ -50,10 +49,6 @@ section.intro {
     text-transform: uppercase;
     @include row;
     @include fill-parent;
-
-    @include media($large-screen-up) {
-      font-size: 2em;
-    }
   }
 
   ul.mini-nav {
@@ -65,6 +60,7 @@ section.intro {
     li {
       display: inline-block;
       padding: 0 1.5em;
+      text-transform: none !important;
     }
 
     a:link, a:visited {
@@ -89,7 +85,7 @@ section.intro {
     i {
       color: white;
       opacity: 0.5;
-      font-size: 3.5em;  
+      font-size: 3.5em;
       text-align: center;
       transition: opacity 0.2s;
 
