@@ -51,14 +51,8 @@ section.intro {
     @include fill-parent;
   }
 
-  @media screen and (max-height: $medium-height) {
-    p {
-      margin-top: -15%;
-      float: left;
-    }
-  }
 
-  @media screen and (max-height: $small-height) {
+  @media screen and (max-height: $medium-small-height) {
     p {
       margin-top: 0;
       float: none;
