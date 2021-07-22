@@ -6,23 +6,10 @@
     @include fill-parent;
     @include shift(0);
   }
-  margin-top: -2%;
-}
-
-@media screen and (max-height: $small-height) {
-  #main-video {
-    margin-top: -6.5%;
-  }
-}
-
-@media screen and (max-height: $medium-small-height) {
-  #main-video {
-    margin-top: -4%;
-  }
 }
 
 @media screen and (max-height: $medium-height) {
-  .footer {
+  footer {
     display: none;
   }
 }
@@ -30,7 +17,7 @@
 #top-level-wrapper.video {
   background: $base-background-color url(image_path('heart.jpg')) no-repeat scroll bottom left;
 
-  footer.footer {
+  footer {
     position: fixed;
     bottom: 0em;
   }
