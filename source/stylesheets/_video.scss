@@ -1,11 +1,7 @@
 #main-video {
   @include row;
-  @include span-columns(8);
-  @include shift(2);
-  @include media($small-screen-down) {
-    @include fill-parent;
-    @include shift(0);
-  }
+  @include fill-parent;
+  @include shift(0);
 }
 
 @media screen and (max-height: $medium-height) {
