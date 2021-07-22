@@ -7,7 +7,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.4.0)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     backports (3.6.8)
     bitters (1.1.0)
       bourbon (>= 4.2)
@@ -29,6 +30,7 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.0.0)
       addressable (~> 2)
+    ffi (1.9.10)
     ffi (1.9.10-x86-mingw32)
     haml (4.0.7)
       tilt
@@ -88,6 +90,7 @@ GEM
     padrino-support (0.13.2)
       activesupport (>= 3.1)
     parallel (1.8.0)
+    public_suffix (4.0.6)
     rack (1.6.4)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -108,6 +111,7 @@ GEM
       execjs (>= 0.3.0, < 3)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
